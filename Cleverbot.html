@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <!--Cosas necesarias uwu-->
+
+
+    <link rel="stylesheet" href="Cleverbot.css" type="text/css"></link>
+    <link rel="icon" href="MOE.png" type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Moe Cleverbot</title>
+
+  </head>
+
+  <body>
+      <div id="app">
+
+    <!--Musica de fondo-->
+    <audio autoplay loop id="audio">
+    <source src="xd.mp3" type="audio/mpeg">
+    </audio>
+  
+
+    <script> 
+    var audio = document.getElementById("audio");
+    audio.volume = 0.05; 
+    </script>
+
+    <!--Titulo, chat y area de mensaje-->
+<h1><marquee scrolldelay="60">{{titulo}}</marquee></h1>
+  
+
+  <textarea readonly id="areaChat" rows="6" cols="30"></textarea>
+
+	<p>	
+
+    <input type="text" name="name" value="" placeholder="Escribe algo" id="txtPregunta" size="50" @keyup.enter="evaluarExpresion"> 
+    <button id="boton" @click="evaluarExpresion">        
+      <i class="material-icons mr-3">
+        send
+        </i>
+      </button>
+ 
+  </p>
+
+      <!--Irrelevante-->
+
+    <p id="resultado1">
+    </p>
+    <p id="resultado2">
+    </p>
+    <p id="respuesta">
+    </p>
+
+    </div>
+
+    <div id="LOL">
+
+      <p>Respuestas Predeterminadas:</p>
+      <p>Hola</p>
+      <p>¿Como Estás?</p>
+      <p>Bien</p>
+  
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="Cleverbot.js" type="text/javascript"></script>
+
+  </body>
+</html>
