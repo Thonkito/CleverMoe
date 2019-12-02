@@ -11,5 +11,11 @@ Hola Mister Alex :P
 Hola
 Como estas?
 Bien
+Cuantos años tienes?
+Qué hora es?
+Qué es una hipótesis?
+Qué es un método cientifico?
+Qué día es?
+Adios
 ```
 
