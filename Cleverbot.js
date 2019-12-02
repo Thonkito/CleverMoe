@@ -1,22 +1,9 @@
 const app = new Vue ({
     el: '#app',
     data: {
-        titulo: "Moe",
-        frutas: [
-            {nombre:'Manzana', cantidad:10},
-            {nombre:'Pera', cantidad:0},
-            {nombre:'Platano', cantidad:11}
-        ],
-     nuevaFruta: ''
+        titulo: "Moe"
     },
     methods:{
-        agregarFruta(){
-        
-           this.frutas.push({
-               nombre: this.nuevaFruta, cantidad: 0
-           });
-           this.nuevaFruta=''
-		},
 		evaluarExpresion() {
 				cadena = document.getElementById("txtPregunta").value;
 				escribirChat(cadena);
